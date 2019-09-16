@@ -17,7 +17,7 @@
 #import "CoreSurface.h"
 #include "IOSurfaceAccelerator.h"
 
-//
+
 
 
 
@@ -89,8 +89,6 @@ UIImage * screenshot(){
 
     IOSurfaceUnlock((IOSurfaceRef)screenSurface, kIOSurfaceLockReadOnly, &aseed);
     
-
-//
     if(aseed1 != aseed2){
         NSLog(@"aseed1 != aseed2");
     }else
@@ -117,67 +115,6 @@ UIImage * screenshot(){
     return image;
     
 }
-
-
-UIImage* rotation(UIImage *image, UIImageOrientation orientation) {  // 因为抓取出来的图像是横着的，对于移动设备来说，需要旋转一下，所以添加了这个函数（来自互联网）
-    long double rotate = 0.0;
-    CGRect rect;
-    
-    float translateX = 0, translateY = 0, scaleX = 1.0, scaleY = 1.0;
-    
-    switch (orientation)
-    {
-        case UIImageOrientationLeft:
-            rotate     = M_PI_2;
-            rect       = CGRectMake(0, 0, image.size.height, image.size.width);
-            translateX = 0;
-            translateY = -rect.size.width;
-            scaleY     = rect.size.width / rect.size.height;
-            scaleX     = rect.size.height / rect.size.width;
-            break;
-            
-        case UIImageOrientationRight:
-            rotate     = 3 * M_PI_2;
-            rect       = CGRectMake(0, 0, image.size.height, image.size.width);
-            translateX = -rect.size.height;
-            translateY = 0;
-            scaleY     = rect.size.width / rect.size.height;
-            scaleX     = rect.size.height / rect.size.width;
-            break;
-            
-        case UIImageOrientationDown:
-            rotate     = M_PI;
-            rect       = CGRectMake(0, 0, image.size.width, image.size.height);
-            translateX = -rect.size.width;
-            translateY = -rect.size.height;
-            break;
-            
-        default:
-            rotate     = 0.0;
-            rect       = CGRectMake(0, 0, image.size.width, image.size.height);
-            translateX = 0;
-            translateY = 0;
-            break;
-    }
-    
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    // ctm transform
-    CGContextTranslateCTM(context, 0.0, rect.size.height);
-    CGContextScaleCTM(context, 1.0, -1.0);
-    CGContextRotateCTM(context, rotate);
-    CGContextTranslateCTM(context, translateX, translateY);
-    
-    CGContextScaleCTM(context, scaleX, scaleY);
-    
-    // draw image
-    CGContextDrawImage(context, CGRectMake(0, 0, rect.size.width, rect.size.height), image.CGImage);
-    UIImage *newImg = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImg;
-}
-
 
 
 
