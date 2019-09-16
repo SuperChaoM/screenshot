@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		741BDF0A23279F7B00B13F8E /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 741BDF0923279F7B00B13F8E /* main.mm */; };
+		741D2AC1232B48410061DC34 /* IOMobileFramebuffer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741D2AC0232B48410061DC34 /* IOMobileFramebuffer.framework */; };
+		741D2AE8232B4B1E0061DC34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741D2AE7232B4B1E0061DC34 /* UIKit.framework */; };
+		741D2AEA232B4B420061DC34 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741D2AE9232B4B420061DC34 /* IOKit.framework */; };
+		741D2AEC232B4B760061DC34 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741D2AEB232B4B760061DC34 /* IOSurface.framework */; };
+		741D2AEE232B4BAC0061DC34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741D2AED232B4BAC0061DC34 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		741BDEFF23279F7B00B13F8E /* SlionDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SlionDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		741BDF0423279F7B00B13F8E /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		741BDF0523279F7B00B13F8E /* monkeydev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = monkeydev.entitlements; sourceTree = "<group>"; };
+		741BDF0923279F7B00B13F8E /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		741BDF122327A13000B13F8E /* com.xx.SlionDaemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.xx.SlionDaemon.plist; sourceTree = "<group>"; };
+		741BDF132327A39700B13F8E /* postinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		741BDF142327A39700B13F8E /* prerm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		741BDF162327A45700B13F8E /* demo.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo.ini; sourceTree = "<group>"; };
+		741D2AC0232B48410061DC34 /* IOMobileFramebuffer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOMobileFramebuffer.framework; path = SlionDaemon/PrivateFrameworks/IOMobileFramebuffer.framework; sourceTree = "<group>"; };
+		741D2ACE232B49D00061DC34 /* IOSurfaceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurfaceBase.h; sourceTree = "<group>"; };
+		741D2ACF232B49D00061DC34 /* IOSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurface.h; sourceTree = "<group>"; };
+		741D2AD0232B49D00061DC34 /* IOSurfaceAccelerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurfaceAccelerator.h; sourceTree = "<group>"; };
+		741D2AD1232B49D00061DC34 /* IOSurfaceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurfaceAPI.h; sourceTree = "<group>"; };
+		741D2AD3232B49D00061DC34 /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOTypes.h; sourceTree = "<group>"; };
+		741D2AD4232B49D00061DC34 /* iokitmig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iokitmig.h; sourceTree = "<group>"; };
+		741D2AD5232B49D00061DC34 /* IOCFPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFPlugIn.h; sourceTree = "<group>"; };
+		741D2AD6232B49D00061DC34 /* IOKitKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitKeys.h; sourceTree = "<group>"; };
+		741D2AD7232B49D00061DC34 /* IOMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOMessage.h; sourceTree = "<group>"; };
+		741D2AD8232B49D00061DC34 /* IOReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOReturn.h; sourceTree = "<group>"; };
+		741D2AD9232B49D00061DC34 /* IODataQueueShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IODataQueueShared.h; sourceTree = "<group>"; };
+		741D2ADA232B49D00061DC34 /* IODataQueueClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IODataQueueClient.h; sourceTree = "<group>"; };
+		741D2ADB232B49D00061DC34 /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMessageNotification.h; sourceTree = "<group>"; };
+		741D2ADC232B49D00061DC34 /* IOCFUnserialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFUnserialize.h; sourceTree = "<group>"; };
+		741D2ADD232B49D00061DC34 /* IOCFBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFBundle.h; sourceTree = "<group>"; };
+		741D2ADE232B49D00061DC34 /* IOBSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOBSD.h; sourceTree = "<group>"; };
+		741D2ADF232B49D00061DC34 /* IOSharedLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSharedLock.h; sourceTree = "<group>"; };
+		741D2AE0232B49D00061DC34 /* IOCFSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFSerialize.h; sourceTree = "<group>"; };
+		741D2AE1232B49D00061DC34 /* IOKitServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitServer.h; sourceTree = "<group>"; };
+		741D2AE2232B49D00061DC34 /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
+		741D2AE3232B49D00061DC34 /* IOCFURLAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFURLAccess.h; sourceTree = "<group>"; };
+		741D2AE4232B49D00061DC34 /* IOMobileFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOMobileFrameBuffer.h; sourceTree = "<group>"; };
+		741D2AE6232B49D00061DC34 /* CoreSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreSurface.h; sourceTree = "<group>"; };
+		741D2AE7232B4B1E0061DC34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		741D2AE9232B4B420061DC34 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		741D2AEB232B4B760061DC34 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/PrivateFrameworks/IOSurface.framework; sourceTree = DEVELOPER_DIR; };
+		741D2AED232B4BAC0061DC34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		741D2AF1232B4C9C0061DC34 /* SlionDaemon */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = SlionDaemon; path = Package/usr/bin/SlionDaemon; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		741BDEFC23279F7B00B13F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741D2AEE232B4BAC0061DC34 /* CoreGraphics.framework in Frameworks */,
+				741D2AEC232B4B760061DC34 /* IOSurface.framework in Frameworks */,
+				741D2AEA232B4B420061DC34 /* IOKit.framework in Frameworks */,
+				741D2AE8232B4B1E0061DC34 /* UIKit.framework in Frameworks */,
+				741D2AC1232B48410061DC34 /* IOMobileFramebuffer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		741BDEF623279F7B00B13F8E = {
+			isa = PBXGroup;
+			children = (
+				741D2ACC232B49D00061DC34 /* headers */,
+				741BDF0123279F7B00B13F8E /* SlionDaemon */,
+				741BDF0023279F7B00B13F8E /* Products */,
+				741BDF1B2327AC8700B13F8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		741BDF0023279F7B00B13F8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				741BDEFF23279F7B00B13F8E /* SlionDaemon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		741BDF0123279F7B00B13F8E /* SlionDaemon */ = {
+			isa = PBXGroup;
+			children = (
+				741BDF0523279F7B00B13F8E /* monkeydev.entitlements */,
+				741BDF0923279F7B00B13F8E /* main.mm */,
+				741BDF0223279F7B00B13F8E /* Package */,
+			);
+			path = SlionDaemon;
+			sourceTree = "<group>";
+		};
+		741BDF0223279F7B00B13F8E /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				741BDF152327A45700B13F8E /* etc */,
+				741BDF102327A13000B13F8E /* Library */,
+				741BDF0323279F7B00B13F8E /* DEBIAN */,
+				741BDF0623279F7B00B13F8E /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		741BDF0323279F7B00B13F8E /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				741BDF132327A39700B13F8E /* postinst */,
+				741BDF142327A39700B13F8E /* prerm */,
+				741BDF0423279F7B00B13F8E /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		741BDF0623279F7B00B13F8E /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				741BDF0723279F7B00B13F8E /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		741BDF0723279F7B00B13F8E /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				741D2AF1232B4C9C0061DC34 /* SlionDaemon */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		741BDF102327A13000B13F8E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				741BDF112327A13000B13F8E /* LaunchDaemons */,
+			);
+			name = Library;
+			path = Package/Library;
+			sourceTree = "<group>";
+		};
+		741BDF112327A13000B13F8E /* LaunchDaemons */ = {
+			isa = PBXGroup;
+			children = (
+				741BDF122327A13000B13F8E /* com.xx.SlionDaemon.plist */,
+			);
+			path = LaunchDaemons;
+			sourceTree = "<group>";
+		};
+		741BDF152327A45700B13F8E /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				741BDF162327A45700B13F8E /* demo.ini */,
+			);
+			name = etc;
+			path = Package/etc;
+			sourceTree = "<group>";
+		};
+		741BDF1B2327AC8700B13F8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				741D2AED232B4BAC0061DC34 /* CoreGraphics.framework */,
+				741D2AEB232B4B760061DC34 /* IOSurface.framework */,
+				741D2AE9232B4B420061DC34 /* IOKit.framework */,
+				741D2AE7232B4B1E0061DC34 /* UIKit.framework */,
+				741D2AC0232B48410061DC34 /* IOMobileFramebuffer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		741D2ACC232B49D00061DC34 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				741D2ACD232B49D00061DC34 /* IOSurface */,
+				741D2AD2232B49D00061DC34 /* IOKit */,
+				741D2AE4232B49D00061DC34 /* IOMobileFrameBuffer.h */,
+				741D2AE5232B49D00061DC34 /* CoreSurface */,
+			);
+			name = headers;
+			path = SlionDaemon/headers;
+			sourceTree = "<group>";
+		};
+		741D2ACD232B49D00061DC34 /* IOSurface */ = {
+			isa = PBXGroup;
+			children = (
+				741D2ACE232B49D00061DC34 /* IOSurfaceBase.h */,
+				741D2ACF232B49D00061DC34 /* IOSurface.h */,
+				741D2AD0232B49D00061DC34 /* IOSurfaceAccelerator.h */,
+				741D2AD1232B49D00061DC34 /* IOSurfaceAPI.h */,
+			);
+			path = IOSurface;
+			sourceTree = "<group>";
+		};
+		741D2AD2232B49D00061DC34 /* IOKit */ = {
+			isa = PBXGroup;
+			children = (
+				741D2AD3232B49D00061DC34 /* IOTypes.h */,
+				741D2AD4232B49D00061DC34 /* iokitmig.h */,
+				741D2AD5232B49D00061DC34 /* IOCFPlugIn.h */,
+				741D2AD6232B49D00061DC34 /* IOKitKeys.h */,
+				741D2AD7232B49D00061DC34 /* IOMessage.h */,
+				741D2AD8232B49D00061DC34 /* IOReturn.h */,
+				741D2AD9232B49D00061DC34 /* IODataQueueShared.h */,
+				741D2ADA232B49D00061DC34 /* IODataQueueClient.h */,
+				741D2ADB232B49D00061DC34 /* OSMessageNotification.h */,
+				741D2ADC232B49D00061DC34 /* IOCFUnserialize.h */,
+				741D2ADD232B49D00061DC34 /* IOCFBundle.h */,
+				741D2ADE232B49D00061DC34 /* IOBSD.h */,
+				741D2ADF232B49D00061DC34 /* IOSharedLock.h */,
+				741D2AE0232B49D00061DC34 /* IOCFSerialize.h */,
+				741D2AE1232B49D00061DC34 /* IOKitServer.h */,
+				741D2AE2232B49D00061DC34 /* IOKitLib.h */,
+				741D2AE3232B49D00061DC34 /* IOCFURLAccess.h */,
+			);
+			path = IOKit;
+			sourceTree = "<group>";
+		};
+		741D2AE5232B49D00061DC34 /* CoreSurface */ = {
+			isa = PBXGroup;
+			children = (
+				741D2AE6232B49D00061DC34 /* CoreSurface.h */,
+			);
+			path = CoreSurface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		741BDEFE23279F7B00B13F8E /* SlionDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741BDF0D23279F7B00B13F8E /* Build configuration list for PBXNativeTarget "SlionDaemon" */;
+			buildPhases = (
+				741BDEFB23279F7B00B13F8E /* Sources */,
+				741BDEFC23279F7B00B13F8E /* Frameworks */,
+				741BDEFD23279F7B00B13F8E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlionDaemon;
+			productName = SlionDaemon;
+			productReference = 741BDEFF23279F7B00B13F8E /* SlionDaemon */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		741BDEF723279F7B00B13F8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					741BDEFE23279F7B00B13F8E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 741BDEFA23279F7B00B13F8E /* Build configuration list for PBXProject "SlionDaemon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 741BDEF623279F7B00B13F8E;
+			productRefGroup = 741BDF0023279F7B00B13F8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				741BDEFE23279F7B00B13F8E /* SlionDaemon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		741BDEFD23279F7B00B13F8E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		741BDEFB23279F7B00B13F8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741BDF0A23279F7B00B13F8E /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		741BDF0B23279F7B00B13F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"SlionDaemon\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		741BDF0C23279F7B00B13F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"SlionDaemon\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		741BDF0E23279F7B00B13F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = SlionDaemon/monkeydev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQDG2HNYF7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SlionDaemon/PrivateFrameworks",
+				);
+				INSTALL_PATH = /usr/bin;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		741BDF0F23279F7B00B13F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = SlionDaemon/monkeydev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQDG2HNYF7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SlionDaemon/PrivateFrameworks",
+				);
+				INSTALL_PATH = /usr/bin;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		741BDEFA23279F7B00B13F8E /* Build configuration list for PBXProject "SlionDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741BDF0B23279F7B00B13F8E /* Release */,
+				741BDF0C23279F7B00B13F8E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741BDF0D23279F7B00B13F8E /* Build configuration list for PBXNativeTarget "SlionDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741BDF0E23279F7B00B13F8E /* Release */,
+				741BDF0F23279F7B00B13F8E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 741BDEF723279F7B00B13F8E /* Project object */;
+}

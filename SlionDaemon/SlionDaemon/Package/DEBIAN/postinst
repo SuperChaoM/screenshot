@@ -1,0 +1,5 @@
+#!/bin/sh
+chown -R root:wheel /usr/bin/SlionDaemon
+chown -R root:wheel /Library/LaunchDaemons/com.xx.SlionDaemon.plist
+/bin/launchctl unload /Library/LaunchDaemons/com.xx.SlionDaemon.plist
+/bin/launchctl load /Library/LaunchDaemons/com.xx.SlionDaemon.plist

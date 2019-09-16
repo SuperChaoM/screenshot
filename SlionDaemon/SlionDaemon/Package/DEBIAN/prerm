@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/bin/launchctl unload /Library/LaunchDaemons/com.xx.SlionDaemon.plist
+exit 0

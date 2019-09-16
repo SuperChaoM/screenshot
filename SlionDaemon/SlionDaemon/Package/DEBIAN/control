@@ -1,0 +1,17 @@
+Package: com.xx.SlionDaemon
+Name: SlionDaemon
+Version: 0.1-2
+Description: 
+Section: System
+Depends: firmware (>= 5.0)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: SuperChao
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+
